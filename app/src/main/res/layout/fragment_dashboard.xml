@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.dashboard.DashboardFragment" >
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="729dp"
+        android:background="@drawable/backrounddash"
+        android:gravity="center"
+        android:isScrollContainer="false"
+        android:orientation="vertical"
+        android:paddingHorizontal="30dp"
+        android:scrollIndicators="left|right"
+        android:scrollbars="vertical"
+        android:verticalScrollbarPosition="right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/NameTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/person"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:fontFamily="@font/actor"
+            android:hint="Name  Last Name"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="#A59292"
+            android:textColorHint="#A59292" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/AadhaarTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/ic_navigation_records"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:fontFamily="@font/actor"
+            android:hint="Aadhaar Card No."
+            android:inputType="numberSigned"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="#A59292"
+            android:textColorHint="#A59292" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/CompanyTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/company"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/actor"
+                android:hint="Car Company"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="#A59292"
+                android:textColorHint="#A59292" />
+
+            <Space
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <EditText
+                android:id="@+id/ModelTextBox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/custom_input"
+                android:drawableStart="@drawable/model"
+                android:drawablePadding="20dp"
+                android:ems="10"
+                android:fontFamily="@font/actor"
+                android:hint="Car Model"
+                android:inputType="textPersonName"
+                android:paddingHorizontal="20dp"
+                android:paddingVertical="10dp"
+                android:textColor="#A59292"
+                android:textColorHint="#A59292" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/actor"
+                android:text="Start Date" />
+
+            <Space
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0" />
+
+            <Button
+                android:id="@+id/endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/actor"
+                android:text="End Date" />
+
+        </LinearLayout>
+
+        <CalendarView
+            android:id="@+id/dateSelect"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:visibility="visible" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:id="@+id/addressTextBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_input"
+            android:drawableStart="@drawable/address"
+            android:drawablePadding="20dp"
+            android:ems="10"
+            android:fontFamily="@font/actor"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="#A59292" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="50dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/discard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/actor"
+                android:text="Discard" />
+
+            <Space
+                android:layout_width="40dp"
+                android:layout_height="30dp" />
+
+            <Button
+                android:id="@+id/addOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/actor"
+                android:text="Add Order" />
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
